@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calendario</title>
+  </head>
+  <body>
+    <form method="post" action="result.php">
+      <p><label>Fecha de apartado</label></p>
+      <input type="date" id="fecha" name="fecha" required="required" min="2019-11-01" max="2019-11-30"/></br>
+      <p><label>Hora de apartado</label></p>
+      <input type="time" id="hora" name="hora" required="required" min="8:00" max="21:00"></br>
+      <p><label>Número de personas</label></p>
+      <input type="number" id="cantidad" value="1" name="cantidad" required="required" min="1" max="10"></br>
+      <p><label>Oficinas</label></p>
+      <select id="oficinas" name="oficinas" required>
+        <option value="" selected>Seleccione una oficina</option>
+        <option>Oficina 1</option>
+        <option>Oficina 2</option>
+        <option>Oficina 3</option>
+      </select>
+      <p><input type="submit" id="select" name="select"></p>    
+    </form>
+  </body>
+</html>

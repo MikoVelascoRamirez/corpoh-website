@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="icon" href="../resources/imgs/logo-corpoh.ico">
+  <link rel="stylesheet" href="../css/estilo-corpoh.css">
+  <title>CORPOH Servicios Contables, Fiscales y Administrativos</title>
+</head>
+
+<body>
+  <!-- Cabecera/Menú -->
+  <div class="w3-top" id="navbar">
+    <div class="w3-row w3-large" style="background-color: #0097e6; color: white;">
+      <div class="w3-col" style="width:20%" id="start">
+        <button class="w3-button w3-hover-black w3-xlarge" onclick="gestionBoton()" id="buttonSlide"
+          style="display: none;">☰</button>
+        <a href="#inicio" class="w3-button w3-block w3-hover-black">Inicio</a>
+      </div>
+      <div class="w3-col" style="width:20%" id="aboutUs">
+        <a href="#about" class="w3-button w3-block w3-hover-black">Nosotros</a>
+      </div>
+      <div class="w3-col w3-dropdown-hover w3-hover-black" style="width:20%" id="serv">
+        <a class="w3-btn w3-block">Servicios</a>
+        <div class="w3-dropdown-content w3-bar-block">
+          <a href="#contable" class="w3-bar-item w3-button w3-hover-black">Contables</a>
+          <a href="#fiscal" class="w3-bar-item w3-button w3-hover-black">Fiscales</a>
+          <a href="#admin" class="w3-bar-item w3-button w3-hover-black">Administrativos</a>
+          <a href="#ots" class="w3-bar-item w3-button w3-hover-black">Outsourcing</a>
+        </div>
+      </div>
+      <div class="w3-col" style="width:20%" id="cont">
+        <a href="#contact" class="w3-button w3-block w3-hover-black">Contacto</a>
+      </div>
+      <div class="w3-col" style="width:20%" id="rooms">
+        <a href="#roomss" class="w3-button w3-block w3-hover-black">Arrendamiento físico/virtual</a>
+      </div>
+    </div>
+    <!--Menú lateral-->
+    <div class="w3-sidebar w3-bar-block w3-animate-left" style="width:200px; display: none;" id="mySidebar">
+      <a href="#inicio" class="w3-bar-item w3-button w3-hover-blue">Inicio</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hover-blue">Nosotros</a>
+      <a href="#services" class="w3-bar-item w3-button w3-hover-blue">Servicios</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-blue">Contacto</a>
+      <a href="#roomss" class="w3-bar-item w3-button w3-hover-blue">Arrendamiento físico/virtual</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="w3-content" id="inicio">
+    <div class="w3-row">
+
+      <div class="w3-col w3-container w3-panel" style="width:20%" id="logo">
+        <img src="../resources/imgs/logo-corpoh.png" class="w3-round w3-image" alt="corpoh" style="width:200px">
+      </div>
+
+      <div class="w3-col w3-container w3-panel" style="width:60%">
+        <h1><b>CORPOH Empresarial</b></h1>
+        <p>Servicios Contables, Fiscales, Administrativos y Arrendamiento</p>
+      </div>
+
+      <div class="w3-col w3-container w3-panel w3-display-topright" id="values" style="width:20%">
+        <ul class="w3-ul w3-card-2 w3-indigo">
+          <li class="w3-display-container">Dólar<span class="w3-button w3-display-right w3-hover-white"><i
+                class="fas fa-arrow-circle-right"></i></span></li>
+          <li class="w3-display-container">UMA<span class="w3-button w3-display-right w3-hover-white"><i
+                class="fas fa-arrow-circle-right"></i></span></li>
+          <li class="w3-display-container">Salario mínimo<span class="w3-button w3-display-right w3-hover-white"><i
+                class="fas fa-arrow-circle-right"></i></span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Slideshow -->
+    <div class="w3-container" id="gallery">
+
+      <div class="w3-display-container mySlides fade">
+        <img src="../resources/imgs/administracion_1.jpg" style="width:100%" class="w3-opacity-min">
+        <div class="w3-display-middle w3-container w3-center w3-col">
+          <h1><span class="w3-blue w3-padding-large">Servicios Contables</span></h1>
+        </div>
+        <div class="w3-display-middle w3-container w3-center w3-col" id="info">
+          <span class="w3-text-white w3-padding-large">
+            <h3>Nuestra experiencia y eficiencia nos respaldan, lleva tu contabilidad al línea con los múltiples
+              servicios que tenemos.</h3><br>
+          </span>
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides fade">
+        <img src="../resources/imgs/contabilidad.jpg" style="width:100%" class="w3-opacity-min">
+        <div class="w3-display-middle w3-container w3-center w3-col">
+          <h1><span class="w3-blue w3-padding-large ">Servicios Fiscales</span></h1>
+        </div>
+        <div class="w3-display-middle w3-container w3-center w3-col" id="info">
+          <span class="w3-text-white w3-padding-large">
+            <h3>No más problemas al momento de declarar.<br>Con CORPOH, podrás ponerte al día en materia fiscal de
+              manera responsable y autónoma.
+            </h3><br>
+          </span>
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides fade">
+        <img src="../resources/imgs/fiscales.jpg" style="width:100%" class="w3-opacity-min">
+        <div class="w3-display-middle w3-container w3-center w3-col">
+          <h1><span class="w3-blue w3-padding-large">Servicios Administrativos</span></h1>
+        </div>
+        <div class="w3-display-middle w3-container w3-center w3-col" id="info">
+          <span class="w3-text-white w3-padding-large ">
+            <h3>En CORPOH, te brindamos asesoría de calidad para que puedas iniciar tu empresa de manera óptima.
+              Todo lo que necesitas para gestionarla con creces.</h3><br>
+          </span>
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides fade">
+        <img src="../resources/imgs/arrendamiento.jpg" style="width:100%" class="w3-opacity-min">
+        <div class="w3-display-middle w3-container w3-center w3-col" id="question">
+          <span class="w3-text-white w3-padding-large">
+            <h3>¿buscas una alternativa para</h3><br>
+          </span>
+        </div>
+        <div class="w3-display-middle w3-container w3-center w3-col">
+          <h1><span class="w3-blue w3-padding-large">adquirir oficinas para trabajar?</span></h1>
+        </div>
+        <div class="w3-display-middle w3-container w3-center w3-col" id="info">
+          <span class="w3-text-white w3-padding-large">
+            <h3>Contamos con excelentes servicios de arrendamiento, trabaja y administra tu tiempo como todo un
+              profesional dentro de nuestras instaalciones</h3><br>
+          </span>
+        </div>
+      </div>
+
+      <!-- Slideshow botones -->
+      <div class="w3-container w3-black w3-padding w3-xlarge">
+        <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+        <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+        <div class="w3-center">
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        </div>
+      </div>
+
+      <div class="w3-container w3-grey w3-padding-8 w3-xlarge" id="dollar">
+        <div class="w3-container w3-center">
+          <span class="w3-text-white w3-xlarge"><img src="../resources/imgs/dollar.png" class="w3-padding">DOLAR HOY:
+            <span class="w3-text-white"><b>$19.14</b></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Acerca de nosotros-->
+    <div class="w3-row w3-container" id="about">
+      <div class="w3-center w3-padding-64">
+        <span
+          class="w3-xlarge w3-bottombar w3-border-blue w3-hover-border-dark-grey w3-padding-16 w3-animate-top">Acerca de
+          nosotros</span>
+      </div>
+
+      <div class="w3-col l6 m6 w3-dark-grey w3-container w3-padding-16 w3-hover-shadow w3-center" style="height: 200px;"
+        id="mision">
+        <h3>Misión</h3>
+        <p>Ser un corporativo donde nuestros clientes encuentren la solución al momento que la requieren, satisfaciendo
+          sus necesidades
+          contables, fiscales o administrativos de forma virtual o física cumpliendo con los requerimientos y
+          disposiciones fiscales vigentes.
+        </p>
+      </div>
+
+      <div class="w3-col l6 m6 w3-black w3-container w3-padding-16 w3-hover-shadow w3-center" id="vision"
+        style="height: 200px;">
+        <h3>Visión</h3>
+        <p>Desarrollar una plataforma que puedan utilizar nuestros clientes, como herramienta para facilitarles el
+          control de su
+          información fiscal y/o contables con mayor eficiencia con la calidad que nos distingue.
+        </p>
+      </div>
+    </div>
+
+    <!-- Services-->
+    <div class="w3-row-padding" id="services">
+      <div class="w3-center w3-padding-64 w3-animate-bottom">
+        <h3>Nuestros servicios</h3>
+        <p>Con nosotros, la contabilidad ya no será un problema.</p>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom" id="contable">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Contables</li>
+          <li class="w3-padding-24 w3-hover-blue">Facturación Electrónica</li>
+          <li class="w3-padding-24 w3-hover-blue">Nóminas en Sistema y Manuales</li>
+          <li class="w3-padding-24 w3-hover-blue">Liquidaciones y Finiquitos</li>
+          <li class="w3-padding-24 w3-hover-blue">Contabilidad portal y en Sistema</li>
+          <li class="w3-padding-24 w3-hover-blue">Estados Financieros</li>
+        </ul>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom" id="fiscal">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Fiscales</li>
+          <li class="w3-padding-16 w3-hover-black">Registro ante el SAT</li>
+          <li class="w3-padding-16 w3-hover-black">Declaraciones provisionales</li>
+          <li class="w3-padding-16 w3-hover-black">Declaraciones Anuales</li>
+          <li class="w3-padding-16 w3-hover-black">Declaraciones informativas</li>
+          <li class="w3-padding-16 w3-hover-black">Dictamenes IMSS y SAT</li>
+          <li class="w3-padding-16 w3-hover-black">Impuestos locales, estatales y federales</li>
+        </ul>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom" id="admin">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Administrativos</li>
+          <li class="w3-padding-small w3-hover-blue">Movimientos afiliatorios al IMSS</li>
+          <li class="w3-padding-small w3-hover-blue">Contratación de personal</li>
+          <li class="w3-padding-small w3-hover-blue">Elaboración de contratos</li>
+          <li class="w3-padding-small w3-hover-blue">Estudios socioeconómicos</li>
+          <li class="w3-padding-small w3-hover-blue">Capacitación para empresas y personales</li>
+          <li class="w3-padding-small w3-hover-blue">Asesorías y distribución en sistema de ASPEL</li>
+          <li class="w3-padding-small w3-hover-blue">Asesorías en página de dependencias gubernamentales</li>
+          <li class="w3-padding-small w3-hover-blue">Distribución y venta de lectores para aceptación de pagos con
+            tarjeta</li>
+        </ul>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom" id="ots">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Outsourcing</li>
+          <li class="w3-padding-32 w3-hover-black">Contratación de personal</li>
+          <li class="w3-padding-32 w3-hover-black">Estudios socioeconómicos</li>
+          <li class="w3-padding-32 w3-hover-black">Servicio de nóminas</li>
+          <li class="w3-padding-32 w3-hover-black">Domicilio fiscal</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--Arrendamiento-->
+    <div class="w3-row-padding" style="margin: 16px 0" id="roomss">
+      <div class="w3-center w3-padding-64">
+        <span
+          class="w3-xlarge w3-bottombar w3-border-blue w3-hover-border-dark-grey w3-padding-16 w3-animate-top">Nuestras
+          oficinas</span>
+      </div>
+
+      <div class="w3-half w3-padding-16" id="gallery">
+        <div class="w3-container">
+          <div class="w3-display-container mySlides1">
+            <img src="../resources/imgs/room24.jpeg" style="width:100%;">
+            <div class="w3-display-bottomleft w3-container w3-black" style="margin-bottom: 5px;">
+              <p>Oficina indivdual</p>
+            </div>
+          </div>
+          <div class="w3-display-container mySlides1">
+            <img src="../resources/imgs/room25.jpeg" style="width:100%;">
+            <div class="w3-display-bottomleft w3-container w3-black" style="margin-bottom: 5px;">
+              <p>Sala de juntas</p>
+            </div>
+          </div>
+          <div class="w3-display-container mySlides1">
+            <img src="../resources/imgs/room30.jpeg" style="width:100%;">
+            <div class="w3-display-bottomleft w3-container w3-black" style="margin-bottom: 5px;">
+              <p>Oficina indivdual</p>
+            </div>
+          </div>
+          <div class="w3-display-container mySlides1">
+            <img src="../resources/imgs/room26.jpeg" style="width:100%;">
+            <div class="w3-display-bottomleft w3-container w3-black" style="margin-bottom: 5px;">
+              <p>Sala de juntas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room24.jpeg"
+              style="width:100%;cursor:pointer" onclick="currentDiv1(1)" title="Oficina indivdual">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room25.jpeg"
+              style="width:100%;cursor:pointer" onclick="currentDiv1(2)" title="Sala de juntas">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room30.jpeg"
+              style="width:100%;cursor:pointer" onclick="currentDiv1(3)" title="Oficina indivdual">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room26.jpeg"
+              style="width:100%;cursor:pointer" onclick="currentDiv1(4)" title="Sala de juntas">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half">
+        <div class="w3-col w3-dark-grey w3-container w3-padding-large w3-center" style="height: 50%;" id="details">
+          <h4><strong>Características</strong></h4>
+          <div class="w3-col s6">
+            <p><i class="fa fa-fw fa-male w3-margin-right"></i> Capacidad total: 15</p>
+            <p><i class="fa fa-fw fa-bath w3-margin-right"></i> Baños: 1</p>
+            <p><i class="fas fa-building w3-margin-right"></i></i> Oficinas: 3</p>
+          </div>
+          <div class="w3-col s6">
+            <p><i class="fa fa-fw fa-clock-o w3-margin-right"></i> Hora inicio: 9 AM</p>
+            <p><i class="fa fa-fw fa-clock-o w3-margin-right"></i> Hora final: 6 PM</p>
+          </div>
+        </div>
+
+        <div class="w3-col w3-container w3-padding-large w3-center"
+          style="height: 50%; background-color: #0097e6; color: white;" id="details">
+          <h4><strong>Servicios</strong></h4>
+          <div class="w3-col s6">
+            <p><i class="fas fa-mug-hot w3-margin-right"></i> Coffee break</p>
+            <p><i class="fas fa-print w3-margin-right"></i> Impresiones</p>
+            <p><i class="fas fa-hands-helping w3-margin-right"></i> Asistente personal</p>
+          </div>
+          <div class="w3-col s6">
+            <p><i class="fa fa-fw fa-wifi w3-margin-right"></i>Internet</p>
+            <p><i class="fas fa-phone w3-margin-right"></i>Teléfono</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-center w3-padding-32" id="contact">
+      <span
+        class="w3-xlarge w3-bottombar w3-border-blue w3-hover-border-dark-grey w3-padding-16 w3-animate-bottom">Contacto</span>
+    </div>
+
+    <form class="w3-container" action="/action_page.php" target="_blank">
+      <div class="w3-section sect">
+        <label>Nombre</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+      </div>
+      <div class="w3-section sect">
+        <label>Correo electrónico</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+      </div>
+      <div class="w3-section sect">
+        <label>Asunto</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+      </div>
+      <div class="w3-section sect">
+        <label>Mensaje</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block sect" style="background-color: #0097e6; color: white">Enviar
+        correo</button>
+    </form>
+
+    <!-- Grid -->
+    <div class="w3-row w3-padding" id="about" style="margin: 32px 0 ">
+      <div class="w3-third w3-hover-shadow">
+        <ul class="w3-ul w3-center">
+          <li class="w3-black w3-xlarge w3-padding-24">Contacto</li>
+          <li class="w3-padding-16 w3-hover-blue"><i class="fas fa-map-marker-alt w3-margin-right"></i>Calle Miguel
+            Hidalgo No. 107, Int No. 25 (dentro de Plaza Karima), Tulancingo, Hidalgo, México</li>
+          <li class="w3-padding-16 w3-hover-blue"><i class="fas fa-mobile-alt w3-margin-right"></i>7757547518</li>
+          <li class="w3-padding-16 w3-hover-blue"><i class="fab fa-whatsapp w3-margin-right"></i>7751664713</li>
+          <li class="w3-padding-16 w3-hover-blue"><i class="fas fa-envelope w3-margin-right"></i>corpohdez@gmail.com
+          </li>
+          <li class="w3-padding-16 w3-hover-blue"><i class="fab fa-facebook-square w3-margin-right"></i>
+            <a href="https://www.facebook.com/corpohsecofia/" title="CORPOH" target="_blank"
+              style="text-decoration: none;">CORPOHSECOFIA</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-twothird w3-hover-shadow">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.2444298628607!2d-98.37261325000965!3d20.082066624730455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d056f5c9c78179%3A0x2d18d4f48391ed41!2sMiguel+Hidalgo+107%2C+Centro%2C+43600+Tulancingo+de+Bravo%2C+Hgo.!5e0!3m2!1ses-419!2smx!4v1554999642446!5m2!1ses-419!2smx"
+          width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Modal-->
+  <div id="myModal" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-center">
+      <header class="w3-container w3-blue">
+        <span class="w3-button w3-blue w3-xlarge w3-display-topright" id="cerrar">&times;</span>
+        <h3>¡Oficinas adecuadas a tus necesidades!</h3>
+      </header>
+      <div class="w3-container city">
+        <div class="w3-half">
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s6">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room1.jpg"
+                style="width:100%;cursor:pointer" onclick="currentDiv2(1)" title="Oficina indivdual">
+              </div>
+            <div class="w3-col s6"><img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room2.jpg"
+                style="width:100%;cursor:pointer" onclick="currentDiv2(2)" title="Oficina indivdual"></div>
+          </div>
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s6"><img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room3.jpg"
+                style="width:100%;cursor:pointer" onclick="currentDiv2(3)" title="Oficina indivdual"></div>
+            <div class="w3-col s6"><img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room4.jpg"
+                style="width:100%;cursor:pointer" onclick="currentDiv2(4)" title="Oficina indivdual"></div>
+          </div>
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s6"><img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room5.jpg"
+                style="width:100%;cursor:pointer" onclick="currentDiv2(5)" title="Oficina indivdual"></div>
+            <div class="w3-col s6"><img class="demo w3-opacity w3-hover-opacity-off" src="../resources/imgs/room6.jpg"
+                style="width:100%;cursor:pointer" onclick="currentDiv2(6)" title="Oficina indivdual"></div>
+          </div>
+        </div>
+        <div class="w3-half w3-center w3-padding-64">
+          <div class="w3-display-container mySlides2"><img src="../resources/imgs/room1.jpg" style="width:100%"></div>
+          <div class="w3-display-container mySlides2"><img src="../resources/imgs/room2.jpg" style="width:100%"></div>
+          <div class="w3-display-container mySlides2"><img src="../resources/imgs/room3.jpg" style="width:100%"></div>
+          <div class="w3-display-container mySlides2"><img src="../resources/imgs/room4.jpg" style="width:100%"></div>
+          <div class="w3-display-container mySlides2"><img src="../resources/imgs/room5.jpg" style="width:100%"></div>
+          <div class="w3-display-container mySlides2"><img src="../resources/imgs/room6.jpg" style="width:100%"></div>
+        </div>
+      </div>
+      <a href="#roomss" class="w3-button w3-block w3-black">Ver oficinas</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="w3-container w3-padding-16 w3-black w3-center">
+    <h4>CORPOH</h4>
+    <a href="#inicio" class="w3-button w3-white w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Ir al
+      inicio</a>
+    <ul class="w3-ul w3-center w3-margin-top">
+      <div class="w3-hover-text-green">Distribuidor Autorizado</div>
+      <li>
+        <img src="../resources/imgs/iZettle-logo.png" style="height: 50px; width: 130px;" class="w3-padding">
+        <img src="../resources/imgs/aspel-logo.png" style="height: 50px; width: 130px;" class="w3-padding">
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    // Slideshow carrusel principal
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      };
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      for (i = 0; i < slides.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+      setTimeout(showSlides, 7000);
+    }
+
+    //Funciones para abrir y cerrar menú lateral
+
+    function gestionBoton() {
+      var sidebar = document.getElementById("buttonSlide");
+
+      if (sidebar.textContent == "☰") {
+        sidebar.textContent = "|||";
+        document.getElementById("mySidebar").style.width = "100%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("mySidebar").style.backgroundColor = "rgba(45, 52, 54,0.8)";
+      } else if (sidebar.textContent == "|||") {
+        sidebar.textContent = "☰";
+        $("#mySidebar").hide(
+          "drop", {
+            direction: "left"
+          },
+          "medium");
+      }
+    }
+
+    //Comportamiento responsive
+
+    $(document).ready(function () {
+      /* setTimeout(function () {
+        $('#myModal').css({ display: "block" });
+        $('#img01').src = this.src;
+      }, 5000); */
+
+      var linkHome = $('#start').children('a');
+      var buttonSide = $('#start').children('button');
+      var linkRooms = $('#serv').children('a');
+
+      if ($(window).width() < 584) {
+        $(linkRooms).text('CORPOH');
+        $('#buttonSlide').attr({
+          style: "display: block"
+        });
+        $('#serv').removeClass("w3-col");
+        $('#serv').removeClass("w3-dropdown-hover");
+        $('#serv').removeClass("w3-hover-black");
+        $('#serv').removeAttr("style");
+        $('#serv').addClass("w3-rest");
+        $('#serv').addClass("w3-xlarge");
+      } else {
+        $(linkRooms).text('Servicios');
+        $('#buttonSlide').attr({
+          style: "display: none"
+        });
+        $('#serv').removeClass("w3-rest");
+        $('#serv').removeClass("w3-xlarge");
+        $('#serv').addClass("w3-col");
+        $('#serv').addClass("w3-dropdown-hover");
+        $('#serv').addClass("w3-hover-black");
+        $('#serv').attr({
+          style: "width:20%"
+        });
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("buttonSlide").textContent = "☰";
+      }
+
+      $(window).resize(function () {
+        if ($(document).width() < 584) {
+          $(linkRooms).text('CORPOH');
+          $('#buttonSlide').attr({
+            style: "display: block"
+          });
+          $('#serv').removeClass("w3-col");
+          $('#serv').removeClass("w3-dropdown-hover");
+          $('#serv').removeClass("w3-hover-black");
+          $('#serv').removeAttr("style");
+          $('#serv').addClass("w3-rest");
+          $('#serv').addClass("w3-xlarge");
+        } else {
+          $(linkRooms).text('Servicios');
+          $('#buttonSlide').attr({
+            style: "display: none"
+          });
+          $('#serv').removeClass("w3-rest");
+          $('#serv').removeClass("w3-xlarge");
+          $('#serv').addClass("w3-col");
+          $('#serv').addClass("w3-dropdown-hover");
+          $('#serv').addClass("w3-hover-black");
+          $('#serv').attr({
+            style: "width:20%"
+          });
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("buttonSlide").textContent = "☰";
+        }
+      });
+
+      //Comportamiento pop up
+      $('#cerrar').click(function () {
+        $('#myModal').css({
+          display: 'none'
+        });
+      });
+
+      $(document).keyup(function (e) {
+        if (e.which == 27) {
+          $('#myModal').css({
+            display: 'none'
+          });
+        }
+      });
+
+    });
+
+    // Slideshow Apartment Images
+    var slideIndex1 = 1;
+    showDivs1(slideIndex1);
+
+    function plusDivs1(n) {
+      showDivs1(slideIndex1 += n);
+    }
+
+    function currentDiv1(n) {
+      showDivs1(slideIndex1 = n);
+    }
+
+    function showDivs1(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides1");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex1 = 1
+      }
+      if (n < 1) {
+        slideIndex1 = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex1 - 1].style.display = "block";
+      dots[slideIndex1 - 1].className += " w3-opacity-off";
+    }
+
+    // Slideshow Apartment Images Modal
+    var slideIndex2 = 1;
+    showDivs2(slideIndex2);
+
+    function plusDivs2(n) {
+      showDivs2(slideIndex2 += n);
+    }
+
+    function currentDiv2(n) {
+      showDivs2(slideIndex2 = n);
+    }
+
+    function showDivs2(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides2");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex2 = 1
+      }
+      if (n < 1) {
+        slideIndex2 = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex2 - 1].style.display = "block";
+      dots[slideIndex2 - 1].className += " w3-opacity-off";
+    }
+
+    //ScrollReveal (Transiciones CSS)
+    window.sr = ScrollReveal();
+    sr.reveal('#navbar', {
+      duration: 2000,
+      origin: 'bottom'
+    });
+    sr.reveal('#logo', {
+      duration: 2000,
+      origin: 'top',
+      distance: '300px'
+    });
+    sr.reveal('.w3-rest', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px'
+    });
+    sr.reveal('#gallery', {
+      duration: 2000,
+      origin: 'center'
+    });
+    sr.reveal('#mision', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+    sr.reveal('#vision', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px'
+    });
+    sr.reveal('#contable', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px',
+      viewfactor: '0.2'
+    });
+    sr.reveal('#fiscal', {
+      duration: 2000,
+      origin: 'top',
+      distance: '300px',
+      viewfactor: '0.2'
+    });
+    sr.reveal('#admin', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px',
+      viewfactor: '0.2'
+    });
+    sr.reveal('#ots', {
+      duration: 2000,
+      origin: 'top',
+      distance: '300px',
+      viewfactor: '0.2'
+    });
+    sr.reveal('.s3, .sect, .w3-third, .w3-twothird', {
+      duration: 2000
+    });
+    sr.reveal('.s3, .sect, .w3-third, .w3-twothird', {
+      interval: 200
+    });
+    sr.reveal('#details', {
+      duration: 2000,
+      origin: 'center'
+    });
+
+    //Smooth Scrolling (librería para deslizamiento)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    })
+  </script>
+
+</body>
+
+</html>

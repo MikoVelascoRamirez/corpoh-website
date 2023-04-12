@@ -1,0 +1,317 @@
+html,body,h1,h2,h3,h4 {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .w3-tag, .fa {
+    cursor: pointer;
+  }
+  
+  .w3-tag {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-top: 6px;
+  }
+
+  #values{
+    margin-top: 4%;
+  }
+
+  #values>ul>li{
+    font-size: 0.8em;
+  }
+
+  textarea{
+    resize: none;
+  }
+  
+  body {
+    background-color: rgba(83, 92, 104,0.1);
+  }
+  
+  #inicio {
+    max-width: 1100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  #sidebar {
+    max-width: 1100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #logo {
+      display: none;
+    }
+  
+    .w3-rest>h1,p {
+      text-align: center;
+    }
+  
+    #aboutUs, #rooms, #cont {
+      display: none;
+    }
+    
+    #start>a {
+      display: none;
+    }
+  
+    #serv>a {
+      text-align: right;
+      pointer-events: none;
+    }
+
+    #mision>p, #vision>p{
+      font-size: 15px;
+    }
+  
+    #about>div>h3 {
+      text-align: center;
+    }
+
+    .mySlides>.w3-col>h1{
+        margin-bottom:15%;
+        font-size: 20px;
+    }
+
+    #info>span>h3{
+        font-size:15px;
+        margin-top: 5%;
+    }
+
+    #question>span>h3{
+        font-size: 15px;
+        margin-top: -15%;
+    }
+  }
+  
+  #mySidebar>button, #mySidebar>a {
+    color: white;
+  }
+
+  #mySidebar0>a{
+    color: white;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #212121;
+  }
+
+#myImg{
+    cursor: pointer;
+}
+
+/*.w3-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+}
+
+.modal>.close:active{
+    -webkit-animation-name: zoom1;
+    -webkit-animation-duration: 0.6s;
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.zoomout{
+    -webkit-animation-name: zoom1;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom{
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom1{
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}*/
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#info{
+    margin-top: 8%;
+    width: 100%;
+}
+
+#question{
+    margin-top: -8%;
+    width:100%;
+}
+
+.w3-padding-small_v2{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.sprite_one{
+  width: 120px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_two{
+  width: 143px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_three{
+  width: 155px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_four{
+  width: 171px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_five{
+  width: 160px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_six{
+  width: 122px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_seven{
+  width: 48px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_eight{
+  width: 86px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks.jpg'); 
+  display: inline-block;
+}
+
+.sprite_nine{
+  width: 120px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks-2.jpg'); 
+  display: inline-block;
+}
+
+.sprite_ten{
+  width: 115px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks-2.jpg'); 
+  display: inline-block;
+}
+
+.sprite_eleven{
+  width: 190px;
+  height: 48px;
+  background: url('../resources/imgs/sprite-banks-2.jpg'); 
+  display: inline-block;
+}
+
+#bbva{
+  background-position: 0 0;
+}
+
+#banamex{
+  background-position: -130px 0;
+}
+
+#santander{
+  background-position: -285px 0;
+}
+
+#scotiabank{
+  background-position: -446px 0;
+}
+
+#inbursa{
+  background-position: -631px 0;
+}
+
+#si_vale{
+  background-position: -800px 0;
+}
+
+#amex{
+  background-position: -932px 0;
+}
+
+#azteca{
+  background-position: -989px 0;
+}
+
+#hsbc{
+  background-position: 0 0;
+}
+
+#bajio{
+  background-position: -125px 0;
+}
+
+#banorte{
+  background-position: -245px 0;
+}
+
+#information{
+  margin-top: 80px;
+  margin-left: 70px;
+}
